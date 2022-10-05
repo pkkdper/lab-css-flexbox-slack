@@ -1,10 +1,207 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
+header, nav {
+    background-color: #540B51;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F3EAE2;
+font-family: sans-serif;
+margin:0; 
+}
+
+/*button blue: #4285F4
 titles black: #191817
 paragraph black: #000000
 paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+links blue: #2E71A6 */
+footer {
+    color: #454245;
+}
+
+nav > div > ul {
+    display: none;
+}
+.navImg {
+    display:flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    /* margin-right:100px;
+    padding-right: 100px; */
+    /* 
+    
+    WHY MARGIN NOT WORKING
+    
+    */
+}
+
+.ss {
+    width:98vw;
+}
+
+.logosCotainer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0%;
+
+/* SPACE IT OUT!!! */
+
+}
+
+.logosImgSmall{
+    height: 11vh;
+    margin: 2px 4px 2px 4px;
+} 
+.logosImgBig{
+    height: 13vh;
+    margin: 2px 4px 2px 4px;
+}
+#logoSlackImg {
+    height: 8vh;
+    margin-right: 300px;
+}
+    nav {
+    display:flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+}
+
+.signupButtons{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin: 20px;
+    height: 170px;
+    width: 550px;
+}
+#signupGoogle{
+margin-top: 15px;
+background-color:rgb(90, 160, 212);
+color: white;
+height: 40%;
+font-size: 20px;
+text-transform: uppercase;
+border-radius: 10px;  
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#logoGoogle {
+height: 50px;
+}
+
+#signupEmail {
+    background-color: aliceblue;
+    color:#540B51;
+    height: 40%;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+
+}
+.allButtons {
+    height: 170px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+	justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.allButtons > button{
+    height: 40%;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.percents {
+    color: #540B51;
+    font-size: 500%;
+    text-align: center;
+}
+.percentsP {
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+.percentsPdesc {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+footer >div {
+    display: flex;
+    flex-direction: row;
+}
+footer > div > ul > li {
+    margin-bottom: 10px;
+}
+footer > ul > li {
+    margin-bottom: 10px;
+}
+.emoji {
+    display: flex;
+    flex-direction: row;
+}
+.emoji > ul > li {
+    width:8em;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.round {
+    background-color: #540B51;
+  height: 90vmin;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.round > h3 {
+    color: #F3EAE2;
+    text-align: center;
+    padding-top: 30px;
+font-size: 40px;
+}
+h1 {
+    color: #F3EAE2;
+    text-align: center;
+}
+header > div > p {
+    color: #F3EAE2;
+text-align: center;
+}
+
+em {
+    color: yellow;
+    font-weight: bold;
+    font-style: normal;
+}
+@media screen and (min-width: 768px) and (min-width: 1024px){
+    header {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .header1 {
+        flex-basis: 100px;
+  height: 100px;
+  margin: 5px;
+    }
+    .header2 {
+        overflow: hidden;
+        max-width: 10px;
+    }
+    body{
+        background-color: black;
+    }
+}

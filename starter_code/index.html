@@ -19,7 +19,7 @@
 <body>
   <nav>
     <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+      <img src="./images/slack-logo.png" alt="Slack logo" id="logoSlackImg"/>
 
       <ul>
         <li>
@@ -37,13 +37,13 @@
       </ul>
     </div>
 
-    <div>
+    <div class="navImg">
       <button>
-        <img src="./images/icon-search.png" alt="Search icon">
+        <img src="./images/icon-search.png" alt="Search icon" class="navIcons" >
       </button>
 
       <button>
-        <img src="./images/icon-menu.png" alt="Menu icon">
+        <img src="./images/icon-menu.png" alt="Menu icon" class="navIcons">
       </button>
 
       <ul hidden>
@@ -58,24 +58,24 @@
   </nav>
 
   <header>
-    <div>
-      <h1>Great teamwork starts with a digital HQ</h1>
+    <div class = "header1">
+      <h1>Great teamwork <br>starts with a digital <br>HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><em>Slack is free to try </em>for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class = "signupButtons">
+        <button id="signupEmail">Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
+        <button id="signupGoogle">
+          <img src="./images/logo-google.png" alt="Google logo" id="logoGoogle"/>
           <span>Sign up with Google</span>
         </button>
       </div>
 
     </div>
 
-    <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+    <div class="header2">
+      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" class = "ss"/>
     </div>
   </header>
 
@@ -83,20 +83,20 @@
     <section>
       <p>Trusted by companies all over the world</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <div class="logosContainer">
+        <img src="./images/logo-airbnb.png" alt="Airbnb logo" class="logosImgSmall"/>
+        <img src="./images/logo-nasa.png" alt="NASA logo" class="logosImgBig"/>
+        <img src="./images/logo-uber.png" alt="Uber logo" class="logosImgSmall"/>
+        <img src="./images/logo-target.png" alt="Target logo" class="logosImgBig"/>
+        <img src="./images/logo-nyt.png" alt="New York Times logo" class="logosImgSmall"/>
+        <img src="./images/logo-spotify.png" alt="Spotify logo" class="logosImgSmall"/>
       </div>
 
     </section>
 
     <section>
       <div>
-        <img src="./images/connectedness-mobile.png" alt="connectedness" />
+        <img src="./images/connectedness-mobile.png" alt="connectedness" class = "ss"/>
       </div>
 
       <div>
@@ -128,13 +128,13 @@
       </div>
 
       <div>
-        <img src="./images/flexibility-mobile.png" alt="flexibility" />
+        <img src="./images/flexibility-mobile.png" alt="flexibility" class = "ss"/>
       </div>
     </section>
 
     <section>
       <div>
-        <img src="./images/speed-mobile.png" alt="speed" />
+        <img src="./images/speed-mobile.png" alt="speed" class = "ss"/>
       </div>
 
       <div>
@@ -155,43 +155,48 @@
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
-      <div>
+      <div class = "allButtons">
         <button>Meet Slack for enterprise</button>
         <button>Talk to sales</button>
       </div>
 
       <ul>
         <li>
-          <p><span>85%</span></p>
-          <p>
+          <p class = "percentsP"><span class = "percents">85%</span></p>
+          <div class = "percentsPdesc"><p>
             of users say Slack has improved communication
             <sup>*</sup>
-          </p>
+          </p></div>
         </li>
 
         <li>
-          <p><span>86%</span></p>
-          <p>
+          <p class = "percentsP"><span class = "percents">86%</span></p>
+          <div class = "percentsPdesc"><p>
             feel their ability to work remotely has improved has improved
             <sup>*</sup>
-          </p>
+          </p></div>
+          
         </li>
 
         <li>
-          <p><span>88%</span></p>
-          <p>
+          <p class = "percentsP"><span class = "percents">88%</span></p>
+          <div class = "percentsPdesc"><p>
             feel more connected to their teams*
             <sup>*</sup>
-          </p>
+          </p></div>
         </li>
       </ul>
     </section>
 
     <section>
-      <h3>Welcome to your new digital HQ</h3>
-
+      <div class = "round">
+        <h3>Welcome to your new <br> digital HQ</h3>
+<div class = "allButtons">
       <button>Try for free</button>
       <button>Talk to sales</button>
+    </div>
+  </div>
+      
     </section>
 
   </main>
@@ -233,7 +238,7 @@
         <li>Careers</li>
       </ul>
     </div>
-
+<hr>
 
     <ul>
       <li>Status</li>
@@ -245,9 +250,8 @@
       <li>Download Slack</li>
     </ul>
 
-    <hr>
-
-    <ul>
+<div class="emoji">
+  <ul>
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -261,6 +265,8 @@
         <i class="fab fa-linkedin"></i>
       </li>
     </ul>
+  </div>
+    
 
     <div>
       <small>
